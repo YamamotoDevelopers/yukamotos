@@ -67,10 +67,7 @@ body {
     max-width: 1200px;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     background-color: #000;
-    border: 2px solid #EB4439;
-    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 10px 40px rgba(235, 68, 57, 0.3);
 }
 
 .video-wrapper iframe {
@@ -133,8 +130,7 @@ body {
     }
 
     .video-wrapper {
-        border-width: 1px;
-        border-radius: 4px;
+        /* No additional styles needed */
     }
 }
 
