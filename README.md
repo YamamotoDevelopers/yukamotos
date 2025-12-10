@@ -1,10 +1,10 @@
-# Go Yamamoto Sizzle Reel
+# Yukamoto's Holiday Card 2025
 
-A single-page website showcasing the Go Yamamoto sizzle reel hosted on Vimeo.
+A single-page website showcasing the Yukamoto holiday card hosted on Vimeo.
 
 ## Overview
 
-- **URL**: [sizzle.go-yamamoto.com](https://sizzle.go-yamamoto.com)
+- **URL**: [yukamotos.go-yamamoto.com](https://yukamotos.go-yamamoto.com)
 - **Hosting**: Cloudflare Pages
 - **DNS**: Cloudflare
 - **Video**: Vimeo embed
@@ -62,14 +62,14 @@ Then navigate to `http://localhost:8000`
 
 ### Step 1: Create GitHub Repository
 
-1. Create a new repository on GitHub (e.g., `sizzle-goyamamoto`)
+1. Create a new repository on GitHub (e.g., `yukamotos`)
 2. Push this code to the repository:
 
 ```bash
 git add .
 git commit -m "Initial commit: sizzle reel page"
 git branch -M main
-git remote add origin git@github.com:YOUR_USERNAME/sizzle-goyamamoto.git
+git remote add origin git@github.com:YOUR_USERNAME/yukamotos.git
 git push -u origin main
 ```
 
@@ -81,7 +81,7 @@ git push -u origin main
 4. Select **Connect to Git**
 5. Authorize GitHub and select your repository
 6. Configure build settings:
-   - **Project name**: `sizzle-goyamamoto`
+   - **Project name**: `yukamotos`
    - **Production branch**: `main`
    - **Build command**: (leave empty - static site)
    - **Build output directory**: `/`
@@ -92,18 +92,18 @@ git push -u origin main
 1. In Cloudflare Pages, go to your project
 2. Navigate to **Custom domains** tab
 3. Click **Set up a custom domain**
-4. Enter: `sizzle.go-yamamoto.com`
+4. Enter: `yukamotos.go-yamamoto.com`
 5. Cloudflare will automatically configure the DNS records
 6. If prompted, add the CNAME record in your DNS settings:
    - **Type**: CNAME
-   - **Name**: `sizzle`
-   - **Target**: `sizzle-goyamamoto.pages.dev` (or similar)
+   - **Name**: `yukamotos`
+   - **Target**: `yukamotos.pages.dev` (or similar)
    - **Proxy status**: Proxied (orange cloud)
 
 ### Step 4: Verify Deployment
 
 1. Wait a few minutes for DNS propagation
-2. Visit `https://sizzle.go-yamamoto.com`
+2. Visit `https://yukamotos.go-yamamoto.com`
 3. Verify the page loads correctly and video plays
 
 ## DNS Configuration (Cloudflare)
@@ -114,8 +114,8 @@ Since your DNS is managed by Cloudflare, the custom domain setup should be autom
 2. Add a CNAME record:
    ```
    Type: CNAME
-   Name: sizzle
-   Target: sizzle-goyamamoto.pages.dev
+   Name: yukamotos
+   Target: yukamotos.pages.dev
    Proxy status: Proxied
    ```
 
@@ -146,4 +146,4 @@ For issues or questions, contact the development team.
 
 **Built with**: HTML5, CSS3, Vimeo Player
 **Deployed on**: Cloudflare Pages
-**Last Updated**: December 2024
+**Last Updated**: December 2025
