@@ -13,7 +13,11 @@ html, body {
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: #000;
+    background-image: url('img/bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #FFF;
     display: flex;
     flex-direction: column;
@@ -25,7 +29,7 @@ body {
 .container {
     width: 100%;
     max-width: 1400px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -60,14 +64,29 @@ body {
     width: 100%;
 }
 
+/* Video Frame Container */
+.video-frame {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    padding: 3.5%;
+    background-image: url('img/video-frame.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Video Wrapper - Responsive 16:9 aspect ratio */
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    /* max-width removed here to fill the frame container */
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     background-color: #000;
     overflow: hidden;
+    border-radius: 4px; /* Optional: slight rounding if frame has it */
 }
 
 .video-wrapper iframe {
@@ -129,8 +148,8 @@ body {
         max-width: 200px;
     }
 
-    .video-wrapper {
-        /* No additional styles needed */
+    .video-frame {
+        padding: 4%; /* Slightly larger padding relative to width on mobile if needed */
     }
 }
 
