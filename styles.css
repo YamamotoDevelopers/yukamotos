@@ -64,12 +64,12 @@ body {
     width: 100%;
 }
 
-/* Video Wrapper - Responsive 16:9 aspect ratio */
+/* Video Wrapper - Matches SVG frame aspect ratio (992.53 / 1523.16) */
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 1200px;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    /* max-width: 1200px; */
+    padding-bottom: 65.16%; 
     background-color: transparent;
     overflow: visible;
 }
@@ -91,11 +91,11 @@ body {
 
 .video-wrapper iframe {
     position: absolute;
-    top: 50%;
+    top: 47.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% - 100px);
-    height: calc(100% - 100px);
+    width: 83%;
+    height: 72%;
     z-index: 2;
     background-color: #000;
 }
